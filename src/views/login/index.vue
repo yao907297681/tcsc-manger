@@ -1,5 +1,7 @@
 <template>
   <div class="login-container">
+    <div class="bg-change"></div>
+
     <el-form
       ref="loginForm"
       :model="loginForm"
@@ -288,9 +290,15 @@ $light_gray: #eee;
   min-height: 100%;
   width: 100%;
   // background-color: $bg;
+  // background-image: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2080624097,1223344728&fm=26&gp=0.jpg");
+  // background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  position: absolute;
+  // top: 0;
+  // left: 0;
   background-image: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2080624097,1223344728&fm=26&gp=0.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 
   overflow: hidden;
 
@@ -301,6 +309,43 @@ $light_gray: #eee;
     padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
+  }
+  @-webkit-keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+  @-moz-keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+  @keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 200%;
+    }
+  }
+  // donghua beijing
+  .bg-change {
+    background-image: url('../../assets/image/logo.png');
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    width: 10%;
+    height: 28%;
+    animation: cloud_three 10s linear infinite;
+    transform: translate3d(0, 0, 0);
   }
 
   .tips {
