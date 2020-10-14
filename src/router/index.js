@@ -105,7 +105,7 @@ export const constantRoutes = [
         path: 'product',
         component: () => import('@/pages/product/Product'),
         name: 'product',
-        meta: { title: '产品管理', icon: 'guide', affix: true }
+        meta: { title: '货物管理', icon: 'guide', affix: true }
       }
     ]
   },
@@ -118,7 +118,7 @@ export const constantRoutes = [
         path: 'categroy',
         component: () => import('@/pages/category/Category'),
         name: 'categroy',
-        meta: { title: '栏目管理', icon: 'icon', affix: true }
+        meta: { title: '仓库管理', icon: 'icon', affix: true }
       }
     ]
   },
@@ -131,7 +131,7 @@ export const constantRoutes = [
         path: 'order',
         component: () => import('@/pages/order/Order'),
         name: 'order',
-        meta: { title: '订单管理', icon: 'example', affix: true }
+        meta: { title: '货物操作管理', icon: 'example', affix: true }
       }
     ]
   },
@@ -157,7 +157,7 @@ export const constantRoutes = [
         path: 'comment',
         component: () => import('@/pages/comment/Comment'),
         name: 'comment',
-        meta: { title: '评论管理', icon: 'user', affix: true }
+        meta: { title: '反馈管理', icon: 'user', affix: true }
       }
     ]
   },
@@ -175,6 +175,22 @@ export const constantRoutes = [
       }
     ]
   },
+  // 仓库 详情 category的
+  {
+    path: '/categoryDetails',
+    component: Layout,
+    redirect: '/categoryDetails',
+    children: [
+      {
+        path: 'categoryDetails',
+        component: () => import('@/pages/category/details'),
+        name: 'categoryDetails',
+        hidden: true,
+        meta: { title: '详情页面' }
+      }
+    ]
+  },
+
   {
     path: '/productDetails',
     component: Layout,

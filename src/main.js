@@ -12,6 +12,8 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
+import ajax from './utils/ajax-coment'
+Vue.use(ajax)
 
 import './icons' // icon
 import './permission' // permission control

@@ -16,13 +16,14 @@ export default {
         }
     },
     created() {
-        
+      
     },
     methods: {
         //返回上一级
         backHandler(){
             this.$router.push({name:'product'})
-        }
+        },
+       
     },
 }
 </script>

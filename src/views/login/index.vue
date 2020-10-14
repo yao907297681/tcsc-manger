@@ -11,7 +11,7 @@
       label-position="left"
     >
       <div class="title-container">
-        <h3 class="title">同 城 送 餐 管 理 平 台</h3>
+        <h3 class="title">在 线 仓 库 管 理 平 台</h3>
       </div>
 
       <el-form-item prop="username">
@@ -297,7 +297,7 @@ $light_gray: #eee;
   position: absolute;
   // top: 0;
   // left: 0;
-  background-image: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2080624097,1223344728&fm=26&gp=0.jpg");
+  background-image: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3910240986,4122134349&fm=26&gp=0.jpg");
   background-repeat: no-repeat;
 
   overflow: hidden;
@@ -336,7 +336,7 @@ $light_gray: #eee;
   }
   // donghua beijing
   .bg-change {
-    background-image: url('../../assets/image/logo.png');
+    background-image: url("../../assets/image/huoche.png");
     background-repeat: repeat-x;
     background-size: 100% 100%;
     position: absolute;
